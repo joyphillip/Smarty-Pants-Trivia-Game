@@ -1,9 +1,9 @@
 // console.log('LINKED')
 // Set up Array with objects
-//Categories???? Movies, Music, Flags, Languages, T/F
+//Categories???? Animals, Movies, Sports, Places, NYC
 //Levels: Easy, Medium, Hard
 // - Array will have objects with the different categories (objects)
-// - Categories: Question, Answer choices (& if stmts), level 
+// - Categories: Question, Answer choices, correct answer, level 
 
 //Grab DOM elements and save into a variable
 const game = document.getElementById('game')
@@ -129,3 +129,12 @@ const gameData = [
     ],
     },
 ]
+
+// Creating a function to pass first catergory through (1st object in the array) and make a title element with it and all its information.
+
+function makeCategory(category) {
+    document.createElement('div')
+
+}
+
+gameData.forEach(category => makeCategory(category))
