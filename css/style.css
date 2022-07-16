@@ -37,3 +37,19 @@ body {
     line-height: 120px;
 
 }
+
+.category-title {
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.button-1 {
+    background-color: yellow;
+}
+
+.button-2 {
+    background-color: yellow;
+}

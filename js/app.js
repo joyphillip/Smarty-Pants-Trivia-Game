@@ -185,6 +185,8 @@ gameData.forEach(category1 => makeCategory(category1))
 // create function to filpcard
 function flipCard() {
     this.innerText = ""
+    this.style.fontSize = "15px"
+    this.style.lineHeight = "30px"
     const textDisplay = document.createElement('div')
     textDisplay.classList.add('card-text')
     // display the question
@@ -199,6 +201,10 @@ function flipCard() {
     button1.innerText = this.getAttribute('answer-choice-1')
     button2.classList.add('button-2')
     button2.innerText = this.getAttribute('answer-choice-2')
-    this.appendChild(textDisplay, button1, button2)
+    this.append(textDisplay, button1, button2)
+
+    //if one card is clicked, remove event listener from other cards
+    const allCards = document.querySelectorAll('.card')
+    allCards.forEach(card => card.removeEventListener('click', flipCard ))
 
 } 
