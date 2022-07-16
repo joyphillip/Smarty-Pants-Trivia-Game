@@ -163,11 +163,22 @@ function makeCategory(category1) {
     if (question.level === 'hard') {
         card.innerText = '300'
     }
+    // adding each question, choices and correct answers to the card
+    card.setAttribute('game-question', question.question)
+    card.setAttribute('answer-choice-1', question.answers[0])
+    card.setAttribute('answer-choice-2', question.answers[1])
+    card.setAttribute('correct-answer', question.correctAnswer)
+
+    //getting the value of the card
+    card.setAttribute('score-value', card.getInnerHTML())
+
+    // adding Event Listeners to each card
+    card.addEventListener('click', flipCard)
+
     })
-
-  
-
 
 }
 // loop through all the category names
 gameData.forEach(category1 => makeCategory(category1))
+
+
