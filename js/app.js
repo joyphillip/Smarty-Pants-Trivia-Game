@@ -130,6 +130,8 @@ const gameData = [
     },
 ]
 
+let score = 0;
+
 // Creating a function to pass first catergory through (1st object in the array) and make a title element with it and all its information.
 
 // making Category names
@@ -182,7 +184,7 @@ function makeCategory(category1) {
 gameData.forEach(category1 => makeCategory(category1))
 
 
-// create function to filpcard
+// creating function to filpcard
 function flipCard() {
     this.innerText = ""
     this.style.fontSize = "15px"
@@ -199,8 +201,13 @@ function flipCard() {
     // add buttons 
     button1.classList.add('button-1')
     button1.innerText = this.getAttribute('answer-choice-1')
+    button1.addEventListener('click', getAnswer)
+
     button2.classList.add('button-2')
     button2.innerText = this.getAttribute('answer-choice-2')
+    button2.addEventListener('click', getAnswer)
+    
+    //appending 
     this.append(textDisplay, button1, button2)
 
     //if one card is clicked, remove event listener from other cards
@@ -208,3 +215,39 @@ function flipCard() {
     allCards.forEach(card => card.removeEventListener('click', flipCard ))
 
 } 
+
+//creating function for answers
+function getAnswer() {
+    //get all cards and add back the event listeners
+    const allCards = document.querySelectorAll('.card')
+    allCards.forEach(card => card.addEventListener('click', flipCard ))
+
+    const cardOfButton = this.parentElement
+    // console.log('cardOfButton', cardOfButton)
+    
+    if (cardOfButton.getAttribute('correct-answer') === this.innerText) {
+        //using parseInt to add the displayed score numbers
+       score = score + parseInt(cardOfButton.getAttribute('score-value'))
+       totalScore.innerText = score
+       cardOfButton.classList.add('correct')
+       setTimeout(() => {
+        //creating while loop to go through ...
+        while( cardOfButton.firstChild) {
+            cardOfButton.removeChild(cardOfButton.lastChild)
+        }
+        cardOfButton.innerText = cardOfButton.getAttribute('score-value')
+       }, 100)
+    } else {
+        cardOfButton.classList.add('wrong')
+        setTimeout(() => {
+            //creating while loop to remove card once their played
+            while( cardOfButton.firstChild) {
+                cardOfButton.removeChild(cardOfButton.lastChild)
+            }
+            cardOfButton.innerText = '0'
+
+    }, 100)
+}
+// remove the event listeners
+cardOfButton.removeEventListener('click', flipCard )
+}
