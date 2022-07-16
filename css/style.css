@@ -53,3 +53,11 @@ body {
 .button-2 {
     background-color: yellow;
 }
+
+.correct {
+    background-color: rgb(54, 252, 54);
+}
+
+.wrong {
+    background-color: red;
+}
