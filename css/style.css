@@ -1,10 +1,35 @@
+/* Add font-family using @import url(); */
+
 body {
+    /* margin: 0; */
+    /* padding: 0; */
     background-color: pink;
-    color:aliceblue;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* font-size: ;
-    font-family: ; */
+    /* font-family: ; */
+}
+
+#game {
+    display: flex;
+    background-color: blueviolet;
+}
+
+.card {
+    width: 160px;
+    height: 120px;
+    background-color: aquamarine;
+    /* making look bevelled  */
+    /* border-left: ;
+    border-right: ;
+    border-top: ;
+    border-bottom: ; */
+    text-align: center;
+    font-size: 100px;
+    margin: 5px;
+    padding: 10px;
+    line-height: 120px;
+
 }
