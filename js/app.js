@@ -7,7 +7,7 @@
 
 //Grab DOM elements and save into a variable
 const game = document.getElementById('game')
-const totalScore = doument.getElementById('score')
+const totalScore = document.getElementById('score')
 
 //make a skeleton and instert questions and answers later
 // Created Array with objects
@@ -132,9 +132,19 @@ const gameData = [
 
 // Creating a function to pass first catergory through (1st object in the array) and make a title element with it and all its information.
 
-function makeCategory(category) {
-    document.createElement('div')
+// Category names
+function makeCategory(category1) {
+    const column = document.createElement('div')
+    column.classList.add('category-column')
+
+    const categoryTitle = document.createElement('div')
+    categoryTitle.classList.add('category-title')
+    categoryTitle.innerText = category1.category
+
+    // appened the column just created to the 'div id= game" 
+    column.appendChild(categoryTitle)
+    game.append(column)
 
 }
-
-gameData.forEach(category => makeCategory(category))
+// loop through all the category names
+gameData.forEach(category1 => makeCategory(category1))
