@@ -182,3 +182,23 @@ function makeCategory(category1) {
 gameData.forEach(category1 => makeCategory(category1))
 
 
+// create function to filpcard
+function flipCard() {
+    this.innerText = ""
+    const textDisplay = document.createElement('div')
+    textDisplay.classList.add('card-text')
+    // display the question
+    textDisplay.innerText = this.getAttribute('game-question')
+
+    //create buttons for answer choices
+    const button1 = document.createElement('button')
+    const button2 = document.createElement('button')
+
+    // add buttons 
+    button1.classList.add('button-1')
+    button1.innerText = this.getAttribute('answer-choice-1')
+    button2.classList.add('button-2')
+    button2.innerText = this.getAttribute('answer-choice-2')
+    this.appendChild(textDisplay, button1, button2)
+
+} 
