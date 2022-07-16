@@ -1,8 +1,12 @@
 /* Add font-family using @import url(); */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+h1 {
+    font-family: 'Rock Salt', cursive;
+}
 body {
-    /* margin: 0; */
-    /* padding: 0; */
+    margin: 0;
+    padding: 0;
     background-color: pink;
     color: black;
     display: flex;

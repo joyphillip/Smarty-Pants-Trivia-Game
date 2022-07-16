@@ -132,8 +132,9 @@ const gameData = [
 
 // Creating a function to pass first catergory through (1st object in the array) and make a title element with it and all its information.
 
-// Category names
+// making Category names
 function makeCategory(category1) {
+
     const column = document.createElement('div')
     column.classList.add('category-column')
 
@@ -144,6 +145,28 @@ function makeCategory(category1) {
     // appened the column just created to the 'div id= game" 
     column.appendChild(categoryTitle)
     game.append(column)
+
+    // making Questions
+    category1.questions.forEach(question => {
+        const card = document.createElement('div')
+        card.classList.add('card')
+    // adding to the column
+        column.appendChild(card)
+
+    // adding each questions level
+    if (question.level === 'easy') {
+        card.innerText = '100'
+    }
+    if (question.level === 'medium') {
+        card.innerText = '200'
+    }
+    if (question.level === 'hard') {
+        card.innerText = '300'
+    }
+    })
+
+  
+
 
 }
 // loop through all the category names
