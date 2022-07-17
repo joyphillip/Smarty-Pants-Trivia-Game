@@ -2,29 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 h1 {
+    color: white;
     font-family: 'Rock Salt', cursive;
+}
+
+h2 {
+    color: white;
 }
 body {
     margin: 0;
     padding: 0;
-    background-color: pink;
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     flex-direction: column;
     /* font-family: ; */
 }
 
+.rules {
+    display: flex;
+    justify-content: right;
+}
+
 #game {
     display: flex;
-    background-color: blueviolet;
+    background-color: burlywood;
 }
 
 .card {
     width: 160px;
     height: 120px;
-    background-color: aquamarine;
+    background-color: white;
     /* making look bevelled  */
     /* border-left: ;
     border-right: ;
@@ -35,7 +44,13 @@ body {
     margin: 5px;
     padding: 10px;
     line-height: 120px;
+    transition: 0.5s ;
+    cursor: pointer;
+}
 
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6)
 }
 
 .category-title {

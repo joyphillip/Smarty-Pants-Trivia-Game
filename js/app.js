@@ -251,3 +251,9 @@ function getAnswer() {
 // remove the event listeners
 cardOfButton.removeEventListener('click', flipCard )
 }
+
+
+//If there are more green than red, player wins
+// function winner(){
+//     if 
+// }
