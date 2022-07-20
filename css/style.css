@@ -21,8 +21,23 @@ body {
 }
 
 .rules {
+    color: black;
     display: flex;
     justify-content: right;
+}
+
+.startButton {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 14px 40px;
+}
+
+.resetButton {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 14px 40px;
 }
 
 #game {

@@ -132,6 +132,24 @@ const gameData = [
 
 let score = 0;
 
+//making start button 
+document.querySelector('.startButton').addEventListener('click', function() {
+    // alert('Welcome! Can you get all the answers correct and prove you are a Smarty Pants?');
+// let rules = document.querySelector('.rules')
+//     alert(`${ rules}`)
+    startGame()
+})
+//reset button
+document.querySelector('.resetButton').addEventListener('click', function() {
+    resetGame()
+})
+
+function resetGame() {
+    game.clearInterval()
+}
+
+function startGame() {
+
 // Creating a function to pass first catergory through (1st object in the array) and make a title element with it and all its information.
 
 // making Category names
@@ -252,6 +270,8 @@ function getAnswer() {
 cardOfButton.removeEventListener('click', flipCard )
 }
 
+
+}
 
 //If there are more green than red, player wins
 // function winner(){
