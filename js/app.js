@@ -8,7 +8,7 @@
 //Grab DOM elements and save into a variable
 const game = document.getElementById('game')
 const totalScore = document.getElementById('score')
-
+// const reset = document.querySelector('.resetButton')
 //make a skeleton and instert questions and answers later
 // Created Array with objects
 // questions key will be an array with an object to include actual question and answer choices.
@@ -139,14 +139,6 @@ document.querySelector('.startButton').addEventListener('click', function() {
 //     alert(`${ rules}`)
     startGame()
 })
-//reset button
-document.querySelector('.resetButton').addEventListener('click', function() {
-    resetGame()
-})
-
-function resetGame() {
-    game.clearInterval()
-}
 
 function startGame() {
 
@@ -270,10 +262,9 @@ function getAnswer() {
 cardOfButton.removeEventListener('click', flipCard )
 }
 
-
 }
 
-//If there are more green than red, player wins
-// function winner(){
-//     if 
-// }
+//reset button/game
+document.querySelector('.resetButton').addEventListener('click', startGame)
+
+
