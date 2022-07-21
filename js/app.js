@@ -134,13 +134,17 @@ let score = 0;
 
 //making start button 
 document.querySelector('.startButton').addEventListener('click', function() {
-    // alert('Welcome! Can you get all the answers correct and prove you are a Smarty Pants?');
-// let rules = document.querySelector('.rules')
-//     alert(`${ rules}`)
     startGame()
 })
 
 function startGame() {
+//remove board if there is one already there
+console.log(document.getElementById('game').hasChildNodes()) //true
+    if(document.getElementById('game').hasChildNodes()){
+//if there are childnodes(true) replace what is in the game div
+    document.getElementById('game').replaceChildren()
+}
+
 
 // Creating a function to pass first catergory through (1st object in the array) and make a title element with it and all its information.
 
@@ -262,9 +266,13 @@ function getAnswer() {
 cardOfButton.removeEventListener('click', flipCard )
 }
 
+// if ( totalScore === '1800') {
+//     alert('Congratulations! You win, smarty pants :)')
+// }
 }
 
 //reset button/game
 document.querySelector('.resetButton').addEventListener('click', startGame)
+
 
 
