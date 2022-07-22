@@ -139,7 +139,7 @@ document.querySelector('.startButton').addEventListener('click', function() {
 
 function startGame() {
     score = 0;
-    totalScore.innerText = 0;
+    totalScore.innerText = '';
 //remove board if there is one already there
 console.log(document.getElementById('game').hasChildNodes()) //true
     if(document.getElementById('game').hasChildNodes()){
@@ -274,7 +274,6 @@ cardOfButton.removeEventListener('click', flipCard )
 // if ( score >= 1800) {
 //     alert('Congratulations! You win, smarty pants!')
 // }
-
 }
 
 
