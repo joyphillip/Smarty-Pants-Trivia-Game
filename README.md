@@ -14,5 +14,5 @@ A self-scoring Jeopardy style trivia game. The player will choose a category whi
 
 ### Stretch Goals
 - As a player, I would like a timer set on questions to add more pressure.
-- As a player, I would like to move on to higher levels and new questions if I win the round before.
--  As a player, I would like to win a trophy as the ultimate smarty pants if all rounds are completed
+- As a player, I would like to move on to higher levels and new questions if I won the round before.
+-  As a player, I would like to win a trophy as the ultimate smarty pants if all rounds are completed.

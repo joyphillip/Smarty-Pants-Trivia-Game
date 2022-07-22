@@ -138,11 +138,13 @@ document.querySelector('.startButton').addEventListener('click', function() {
 })
 
 function startGame() {
+    score = 0;
+    totalScore.innerText = 0;
 //remove board if there is one already there
 console.log(document.getElementById('game').hasChildNodes()) //true
     if(document.getElementById('game').hasChildNodes()){
 //if there are childnodes(true) replace what is in the game div
-    document.getElementById('game').replaceChildren()
+    document.getElementById('game').replaceChildren();
 }
 
 
@@ -198,7 +200,7 @@ function makeCategory(category1) {
 gameData.forEach(category1 => makeCategory(category1))
 
 
-// creating function to filpcard
+// creating function to flipcard
 function flipCard() {
     this.innerText = ""
     this.style.fontSize = "15px"
@@ -262,14 +264,21 @@ function getAnswer() {
 
     }, 100)
 }
+if ( score >= 1800) {
+    alert('Congratulations! You win, smarty pants!')
+}
 // remove the event listeners
 cardOfButton.removeEventListener('click', flipCard )
 }
 
-// if ( totalScore === '1800') {
-//     alert('Congratulations! You win, smarty pants :)')
+// if ( score >= 1800) {
+//     alert('Congratulations! You win, smarty pants!')
 // }
+
 }
+
+
+
 
 //reset button/game
 document.querySelector('.resetButton').addEventListener('click', startGame)
