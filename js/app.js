@@ -271,12 +271,7 @@ if ( score >= 1800) {
 cardOfButton.removeEventListener('click', flipCard )
 }
 
-// if ( score >= 1800) {
-//     alert('Congratulations! You win, smarty pants!')
-// }
 }
-
-
 
 
 //reset button/game

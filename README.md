@@ -10,7 +10,7 @@ A self-scoring Jeopardy style trivia game. The player will choose a category whi
 - As a player, I want to be able to click on my answer choice.
 - As a player, I want to know if my answer choice is correct or incorrect.
 - As a player, I want the correct number of points added to my total score.
-- As a player, I want to be alerted if I won or not.
+- As a player, I want to be alerted if I won.
 
 ### Stretch Goals
 - As a player, I would like a timer set on questions to add more pressure.
