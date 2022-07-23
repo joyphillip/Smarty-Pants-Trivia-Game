@@ -17,11 +17,11 @@ body {
     justify-content: right;
     align-items: center;
     flex-direction: column;
-    /* font-family: ; */
 }
 
 .rules {
     color: black;
+    font-weight: bold;
     display: flex;
     justify-content: right;
 }
@@ -49,11 +49,6 @@ body {
     width: 160px;
     height: 120px;
     background-color: white;
-    /* making look bevelled  */
-    /* border-left: ;
-    border-right: ;
-    border-top: ;
-    border-bottom: ; */
     text-align: center;
     font-size: 100px;
     margin: 5px;
