@@ -264,7 +264,7 @@ function getAnswer() {
 
     }, 100)
 }
-if ( score >= 1800) {
+if ( score > 1800) {
     alert('Congratulations! You win, smarty pants!')
 }
 // remove the event listeners
