@@ -1,6 +1,6 @@
 # Smarty-Pants-Trivia-Game
 
-A self-scoring Jeopardy style trivia game. The player will choose a category which has three different levels, 100 = easy, 200= medium, 300= hard. If the answer to the question is correct, the question box will turn green and the points will be added to the score. If the chosen answer is incorrect then the box will turn red and no points will be added to the score. In the end, if there are more green boxes displayed than red, the player wins. Can you get all the questions correct, smarty pants?
+A self-scoring Jeopardy style trivia game. The player will choose a category which has three different levels, 100 = easy, 200= medium, 300= hard. If the answer to the question is correct, the question box will turn green and the points will be added to the score. If the chosen answer is incorrect then the box will turn red and no points will be added to the score. In the end, if there are more green boxes displayed than red or the total score is above 1800, the player wins. Can you get all the questions correct, smarty pants?
 
 ## Wire Frames
 
