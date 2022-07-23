@@ -2,6 +2,14 @@
 
 A self-scoring Jeopardy style trivia game. The player will choose a category which has three different levels, 100 = easy, 200= medium, 300= hard. If the answer to the question is correct, the question box will turn green and the points will be added to the score. If the chosen answer is incorrect then the box will turn red and no points will be added to the score. In the end, if there are more green boxes displayed than red, the player wins. Can you get all the questions correct, smarty pants?
 
+## Wire Frames
+
+<img width="991" alt="Screen Shot 2022-07-12 at 7 46 27 PM" src="https://media.git.generalassemb.ly/user/43459/files/ce112b44-23cf-40ab-b3f7-8a1a368e37a4">
+
+<img width="987" alt="Screen Shot 2022-07-12 at 7 47 27 PM" src="https://media.git.generalassemb.ly/user/43459/files/3e717cd8-2672-4e54-9b73-63c186566e9b">
+
+<img width="991" alt="Screen Shot 2022-07-12 at 7 47 46 PM" src="https://media.git.generalassemb.ly/user/43459/files/c89a8400-825d-457d-b134-a1b28b42db70">
+
 
 ## User Stories
 
