@@ -8,10 +8,11 @@
 //Grab DOM elements and save into a variable
 const game = document.getElementById('game')
 const totalScore = document.getElementById('score')
-// const reset = document.querySelector('.resetButton')
-//make a skeleton and instert questions and answers later
+
+//make a skeleton and insert questions and answers later
 // Created Array with objects
 // questions key will be an array with an object to include actual question and answer choices.
+
 const gameData = [
     {
         category: "Animals",
@@ -138,6 +139,7 @@ document.querySelector('.startButton').addEventListener('click', function() {
 })
 
 function startGame() {
+
     score = 0;
     totalScore.innerText = '';
 //remove board if there is one already there
@@ -247,7 +249,7 @@ function getAnswer() {
        totalScore.innerText = score
        cardOfButton.classList.add('correct')
        setTimeout(() => {
-        //creating while loop to go through ...
+        //creating while loop to go through and remove card, once card is played
         while( cardOfButton.firstChild) {
             cardOfButton.removeChild(cardOfButton.lastChild)
         }
